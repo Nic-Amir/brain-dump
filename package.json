@@ -1,0 +1,25 @@
+{
+  "name": "brain-dump",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client_js_random.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nic-Amir/brain-dump.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nic-Amir/brain-dump/issues"
+  },
+  "homepage": "https://github.com/Nic-Amir/brain-dump#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.0",
+    "socket.io-client": "^4.6.0"
+  }
+}
