@@ -1,12 +1,23 @@
-const io = require('socket.io-client');
+const io = require("socket.io-client");
 
 // connect to the socket.io server
-const socket = io('http://localhost:3000');
+const socket = io("http://localhost:3000");
 
-
-// listen for the 'randomNumber' event and handle the incoming data
-socket.on('index', (data) => {
-    console.log('normalIndex:', data.normalIndex, 'jumpIndex:', data.jumpIndex);
-    // update your UI or do any other processing with the received index values here
-  });
-  
+socket.on("index", (data) => {
+  console.log(
+    "normalIndex:",
+    data.normalIndex.toFixed(2),
+    " | ",
+    "jumpIndex:",
+    data.jumpIndex.toFixed(2),
+    " | ",
+    "driftIndex",
+    data.driftIndex.toFixed(2),
+    " | ",
+    "stepIndex",
+    data.stepIndex.toFixed(2),
+    " | ",
+    "boomIndex",
+    data.boomIndex.toFixed(2)
+  );
+});
